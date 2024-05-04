@@ -1,0 +1,256 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* Remove default list styles */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove default margin and padding from body */
+body {
+  margin: 0 auto;
+  background-color: hsl(217, 28%, 15%);
+  color: white;
+  width: 375px;
+  font-family: "Open Sans";
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+}
+
+main {
+  display: flex;
+  justify-content: center; /* Horizontally center the section */
+  align-items: center; /* Vertically center the section */
+  background-color: hsl(218, 28%, 13%);
+  padding: 20px;
+  flex-direction: column;
+}
+
+
+button {
+  background-color: hsl(198, 60%, 50%);
+  border: none;
+  color: white;
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+h1, h2, h3 {
+  font-family: "Raleway";
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.get-started button {
+  padding: 20px 100px;
+}
+
+.illustration, .illustration-1 {
+  width: 320px;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
+
+.icon {
+  margin: 100px 0 50px 0;
+  width: 70px;
+}
+
+.third-section {
+  margin-bottom: 150px;
+  margin-top: 150px;
+  text-align: left;
+}
+
+.third-section a {
+  color:hsl(176, 68%, 64%);
+  font-size: 14px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+.third-section a img {
+  text-decoration: underline;
+  margin-left: 8px;
+}
+
+.third-section a:hover {
+  color: white;
+}
+
+.fourth-section {
+  width: 300px;
+  text-align: left;
+  padding-bottom: 250px;
+}
+
+.bg-quotes {
+  width: 30px;
+}
+
+.testimonial {
+  background-color: hsl(219, 30%, 18%);
+  padding: 30px 25px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.badge img {
+  width: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.badge p {
+  padding-left: 10px;
+}
+
+.badge .profile-name {
+  font-weight: 700;
+}
+
+.badge .position {
+  font-size: 10px;
+}
+
+.fifth-section {
+  position: absolute;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 335px;
+  background-color: hsl(217, 28%, 15%);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  z-index: 10;
+  bottom: 850px;
+}
+
+.fifth-section input {
+  border: none;
+  padding: 20px ;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    width: 1000px;
+    font-size: 13px;
+  }
+
+  section .get-started {
+    margin: 0 auto;
+    width: 500px;
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .get-started p {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 15px;
+    line-height: 1.7;
+  }
+
+  .get-started button {
+    padding: 10px 50px;
+    margin-top: 15px;
+  }
+
+  .second-section {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    column-gap: 60px;
+    margin-top: 40px;
+  }
+
+  .third-section {
+    display: grid;
+    grid-template-columns: 320px 400px;
+    column-gap: 100px;
+    margin-bottom: 30px;
+  }
+
+  .fourth-section {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .bg-quotes {
+    position: absolute;
+    top: -25px;
+  }
+
+  .inside {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    justify-content: center;    
+  }
+
+  .fifth-section {
+    display: flex;
+    width: 650px;
+    padding: 30px 60px;
+    border-radius: 10px;
+    bottom: 390px;
+    font-size: 12px;
+  }
+
+  .fifth-section input {
+    margin-right: 20px;
+    width: 280px;
+    padding: 10px 30px;
+    height: 15px;
+  }
+  
+  .fifth-section button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
